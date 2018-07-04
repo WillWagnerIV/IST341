@@ -1,0 +1,25 @@
+# 
+# Hashtag lines are optional comments
+#
+# state 0 with nothing e: go one step e
+0 *x** -> e 0
+
+# when touching e wall start moving
+
+# state 0 with nothing n
+0 xE** -> n 1
+
+0 NE** -> s 2
+
+# state 1 with nothing e
+1 *x** -> e 1
+
+# state 1 with something to the N: go W + into st 2 
+# ** This will crash if picobot has a wall to the W! **
+1 NE** -> W 2 
+
+# state 2 with nothing to the S: go one step S
+2 ***x -> S 2   
+
+# state 2 with something to the S: stay put + into state 1
+2 ***S -> w 1   

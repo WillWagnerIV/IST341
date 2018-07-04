@@ -1,0 +1,6 @@
+hw3pr0.txt
+
+Will Wagner
+IST341
+
+The article about the Jeopardy project and Watson was lacking in technical detail for my taste, but still interesting.  I found playing Watson at the trivia game interesting.  Without a timer for the buzzer, I was able to easily beat the computer.  I found that its answers mirrored my own. I know some of the world's greatest minds are working on Watson and the associated AI, but frankly I wasn't impressed.

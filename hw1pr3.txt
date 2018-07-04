@@ -1,0 +1,24 @@
+# 
+# Hashtag lines are optional comments
+#
+# Go to bottom
+0 *x*x -> S 0
+
+# Go to far right
+0 *x*S -> E 0
+
+# state 0 with nothing N: go one step N
+0 xE*S -> N 1
+
+#   
+1 x*** -> N 1
+
+# state 1 with something to the N: go W + into st 2 
+# ** This will crash if picobot has a wall to the W! **
+1 N*** -> W 2 
+
+# state 2 with nothing to the S: go one step S
+2 ***x -> S 2   
+
+# state 2 with something to the S: stay put + into state 1
+2 ***S -> w 1   

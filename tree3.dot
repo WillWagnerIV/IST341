@@ -1,0 +1,6 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+graph [ranksep=equally, splines=polyline] ;
+0 [label="sex <= 0.5\ngini = 0.5097\nsamples = 1045\nvalue = [28, 602, 415]\nclass = 1", fillcolor="#39e5814c"] ;
+1 [label="age <= 9.5\ngini = 0.3616\nsamples = 657\nvalue = [18, 508, 131]\nclass = 1", fillcolor="#39e581b7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;

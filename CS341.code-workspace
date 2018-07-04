@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Applications/XAMPP/xamppfiles/htdocs/dbGame",
+			"name": "dbGame"
+		},
+		{
+			"path": "/Users/Shared/Unity/DB Shapes Game/Assets/Scripts"
+		}
+	],
+	"settings": {}
+}

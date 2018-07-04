@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+graph [ranksep=equally, splines=polyline] ;
+0 [label="sex <= 0.5\ngini = 0.5097\nsamples = 1045\nvalue = [28, 602, 415]\nclass = Survived", fillcolor="#39e5814c"] ;
+1 [label="age <= 9.5\ngini = 0.3616\nsamples = 657\nvalue = [18, 508, 131]\nclass = Survived", fillcolor="#39e581b7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="pclass <= 2.5\ngini = 0.5365\nsamples = 43\nvalue = [2, 18, 23]\nclass = -1", fillcolor="#8139e533"] ;
+1 -> 2 ;
+3 [label="gini = 0.2449\nsamples = 14\nvalue = [2, 0, 12]\nclass = -1", fillcolor="#8139e5d4"] ;
+2 -> 3 ;
+4 [label="gini = 0.4709\nsamples = 29\nvalue = [0, 18, 11]\nclass = Survived", fillcolor="#39e58163"] ;
+2 -> 4 ;
+5 [label="pclass <= 1.5\ngini = 0.3315\nsamples = 614\nvalue = [16, 490, 108]\nclass = Survived", fillcolor="#39e581c1"] ;
+1 -> 5 ;
+6 [label="gini = 0.4776\nsamples = 148\nvalue = [4, 95, 49]\nclass = Survived", fillcolor="#39e58176"] ;
+5 -> 6 ;
+7 [label="gini = 0.2648\nsamples = 466\nvalue = [12, 395, 59]\nclass = Survived", fillcolor="#39e581d3"] ;
+5 -> 7 ;
+8 [label="pclass <= 2.5\ngini = 0.4049\nsamples = 388\nvalue = [10, 94, 284]\nclass = -1", fillcolor="#8139e5a5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="fare <= 26.125\ngini = 0.1877\nsamples = 236\nvalue = [10, 14, 212]\nclass = -1", fillcolor="#8139e5e3"] ;
+8 -> 9 ;
+10 [label="gini = 0.3478\nsamples = 77\nvalue = [5, 11, 61]\nclass = -1", fillcolor="#8139e5c1"] ;
+9 -> 10 ;
+11 [label="gini = 0.0968\nsamples = 159\nvalue = [5, 3, 151]\nclass = -1", fillcolor="#8139e5f2"] ;
+9 -> 11 ;
+12 [label="fare <= 23.0875\ngini = 0.4986\nsamples = 152\nvalue = [0, 80, 72]\nclass = Survived", fillcolor="#39e58119"] ;
+8 -> 12 ;
+13 [label="gini = 0.4976\nsamples = 131\nvalue = [0, 61, 70]\nclass = -1", fillcolor="#8139e521"] ;
+12 -> 13 ;
+14 [label="gini = 0.1723\nsamples = 21\nvalue = [0, 19, 2]\nclass = Survived", fillcolor="#39e581e4"] ;
+12 -> 14 ;
+{rank=same ; 0} ;
+{rank=same ; 1; 8} ;
+{rank=same ; 2; 5; 9; 12} ;
+{rank=same ; 3; 4; 6; 7; 10; 11; 13; 14} ;
+}

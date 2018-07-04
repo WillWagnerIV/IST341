@@ -1,0 +1,65 @@
+{
+  "destination_addresses": [
+    "Cairo, Cairo Governorate, Egypt",
+    "12 Wilberforce St, Freetown, Sierra Leone"
+  ],
+  "origin_addresses": [
+    "Kinshasa, Democratic Republic of the Congo",
+    "Libreville, Gabon"
+  ],
+  "rows": [
+    {
+      "elements": [
+        {
+          "distance": {
+            "text": "8,400 km",
+            "value": 8400023
+          },
+          "duration": {
+            "text": "5 days 9 hours",
+            "value": 462631
+          },
+          "status": "OK"
+        },
+        {
+          "distance": {
+            "text": "5,601 km",
+            "value": 5600844
+          },
+          "duration": {
+            "text": "3 days 16 hours",
+            "value": 315660
+          },
+          "status": "OK"
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "distance": {
+            "text": "7,350 km",
+            "value": 7350153
+          },
+          "duration": {
+            "text": "4 days 16 hours",
+            "value": 404320
+          },
+          "status": "OK"
+        },
+        {
+          "distance": {
+            "text": "4,551 km",
+            "value": 4550974
+          },
+          "duration": {
+            "text": "2 days 23 hours",
+            "value": 257349
+          },
+          "status": "OK"
+        }
+      ]
+    }
+  ],
+  "status": "OK"
+}
